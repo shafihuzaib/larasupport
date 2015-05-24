@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Larasupport by irazasyed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Larasupport</h1>
+      <h2 class="project-tagline">Adds Laravel Packages Support to Lumen and Other Helpers.</h2>
+      <a href="https://github.com/irazasyed/larasupport" class="btn">View on GitHub</a>
+      <a href="https://github.com/irazasyed/larasupport/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/irazasyed/larasupport/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="larasupport-package" class="anchor" href="#larasupport-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>Larasupport Package</h1>
+
+<p><a href="https://github.com/irazasyed/larasupport"><img src="https://img.shields.io/badge/Package%20for%20-Lumen-blue.svg?style=flat-square" alt="Package for Lumen"></a>
+<a href="https://github.com/irazasyed/larasupport/releases"><img src="https://img.shields.io/github/release/irazasyed/larasupport.svg?style=flat-square" alt="Latest Version"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License"></a>
+<a href="https://packagist.org/packages/irazasyed/larasupport"><img src="https://img.shields.io/packagist/dt/irazasyed/larasupport.svg?style=flat-square" alt="Total Downloads"></a></p>
+
+<blockquote>
+<p>Laravel Support for Lumen: Adds missing helpers that are not being made to the core of Lumen. Lets you use Laravel Packages in Lumen.</p>
+
+<p>There are some helper functions that are available in core of Laravel framework which are being used in Laravel Packages. Now because of these helpers missing in core of the Lumen, You won't be able to use those amazing Laravel Packages.</p>
+
+<p>I had submited PRs as well as created issue tickets in Lumen to add these helpers to the core but it got rejected with a reason to use Laravel instead. Just for Packages support i didn't want to use full-stack framework. There were few discussions about the same as well. Hence, This package to deal with this issue!</p>
+</blockquote>
+
+<h2>
+<a id="quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Start</h2>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<h4>
+<a id="install-through-composer" class="anchor" href="#install-through-composer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Through Composer</h4>
+
+<p>You can either add the package directly by firing this command</p>
+
+<pre><code>$ composer require irazasyed/larasupport:~1.0
+</code></pre>
+
+<p>Or add in the <code>require</code> key of <code>composer.json</code> file manually</p>
+
+<pre><code>"irazasyed/larasupport": "~1.0"
+</code></pre>
+
+<p>And Run the Composer update command</p>
+
+<pre><code>$ composer update
+</code></pre>
+
+<p>And you're done! You can now start installing any Laravel Package out there.</p>
+
+<h2>
+<a id="available-methods" class="anchor" href="#available-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available Methods</h2>
+
+<blockquote>
+<p>These helpers can be used across your Lumen project, not only with Laravel Packages.</p>
+</blockquote>
+
+<h4>
+<a id="public_path" class="anchor" href="#public_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>public_path</h4>
+
+<p>Get the fully qualified path to the <code>public</code> directory. You can set env variable <code>PUBLIC_PATH</code> and it'll return the same instead of the default <code>public</code>.</p>
+
+<h4>
+<a id="config_path" class="anchor" href="#config_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>config_path</h4>
+
+<p>Get the fully qualified path to the <code>config</code> directory (Mostly used with Laravel Packages).</p>
+
+<h4>
+<a id="database_path" class="anchor" href="#database_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>database_path</h4>
+
+<p>Get the fully qualified path to the <code>database</code> directory (Mostly used with Laravel Packages).</p>
+
+<h4>
+<a id="route_parameter" class="anchor" href="#route_parameter" aria-hidden="true"><span class="octicon octicon-link"></span></a>route_parameter</h4>
+
+<div class="highlight highlight-php"><pre><span class="pl-s1">route_parameter(<span class="pl-smi">$name</span>, <span class="pl-smi">$default</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>)</span></pre></div>
+
+<p>Get a given parameter from the route.</p>
+
+<h2>
+<a id="contributions" class="anchor" href="#contributions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributions</h2>
+
+<p>PRs are Welcome :)</p>
+
+<h2>
+<a id="additional-information" class="anchor" href="#additional-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional information</h2>
+
+<p>Any issues, please <a href="https://github.com/irazasyed/larasupport/issues">report here</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="LICENSE">MIT</a> © <a href="http://lk.gd/irazasyed">Syed Irfaq R.</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/irazasyed/larasupport">Larasupport</a> is maintained by <a href="https://github.com/irazasyed">irazasyed</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
