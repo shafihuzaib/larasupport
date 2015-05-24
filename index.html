@@ -59,6 +59,15 @@
 <pre><code>$ composer update
 </code></pre>
 
+<h4>
+<a id="add-service-provider" class="anchor" href="#add-service-provider" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add Service Provider</h4>
+
+<p>Add this service provider to your <code>bootstrap/app.php</code> file.</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-smi">$app</span><span class="pl-k">-&gt;</span>register(<span class="pl-s"><span class="pl-pds">'</span>Irazasyed\Larasupport\Providers\ArtisanServiceProvider<span class="pl-pds">'</span></span>);</span></pre></div>
+
+<p>Artisan Service Provider is an optional provider required only if you want <code>vendor:publish</code> command working.</p>
+
 <p>And you're done! You can now start installing any Laravel Package out there.</p>
 
 <h2>
@@ -67,6 +76,9 @@
 <blockquote>
 <p>These helpers can be used across your Lumen project, not only with Laravel Packages.</p>
 </blockquote>
+
+<h3>
+<a id="paths" class="anchor" href="#paths" aria-hidden="true"><span class="octicon octicon-link"></span></a>Paths</h3>
 
 <h4>
 <a id="public_path" class="anchor" href="#public_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>public_path</h4>
@@ -82,6 +94,25 @@
 <a id="database_path" class="anchor" href="#database_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>database_path</h4>
 
 <p>Get the fully qualified path to the <code>database</code> directory (Mostly used with Laravel Packages).</p>
+
+<h3>
+<a id="artisan" class="anchor" href="#artisan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Artisan</h3>
+
+<h4>
+<a id="vendorpublish" class="anchor" href="#vendorpublish" aria-hidden="true"><span class="octicon octicon-link"></span></a>vendor:publish</h4>
+
+<p>Artisan command to Publish any publishable assets from vendor packages (Required to get Laravel Packages working!).</p>
+
+<pre lang="cli"><code>php artisan vendor:publish
+</code></pre>
+
+<p>OR</p>
+
+<pre lang="cli"><code>php artisan vendor:publish --provider="Vendor\Providers\PackageServiceProvider" 
+</code></pre>
+
+<h3>
+<a id="other" class="anchor" href="#other" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other</h3>
 
 <h4>
 <a id="route_parameter" class="anchor" href="#route_parameter" aria-hidden="true"><span class="octicon octicon-link"></span></a>route_parameter</h4>
