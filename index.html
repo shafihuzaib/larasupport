@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Larasupport by irazasyed</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Larasupport</h1>
-      <h2 class="project-tagline">Adds Laravel Packages Support to Lumen and Other Helpers.</h2>
-      <a href="https://github.com/irazasyed/larasupport" class="btn">View on GitHub</a>
-      <a href="https://github.com/irazasyed/larasupport/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/irazasyed/larasupport/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <section class="main-content">
-      <h1>
-<a id="larasupport-package" class="anchor" href="#larasupport-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>Larasupport Package</h1>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Larasupport by irazasyed</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Larasupport</h1>
+        <h2>Adds Laravel Packages Support to Lumen and Other Helpers.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/irazasyed/larasupport/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/irazasyed/larasupport/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/irazasyed/larasupport" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="larasupport-package" class="anchor" href="#larasupport-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Larasupport Package</h1>
 
 <p><a href="https://github.com/irazasyed/larasupport"><img src="https://img.shields.io/badge/Package%20for%20-Lumen-blue.svg?style=flat-square" alt="Package for Lumen"></a>
 <a href="https://github.com/irazasyed/larasupport/releases"><img src="https://img.shields.io/github/release/irazasyed/larasupport.svg?style=flat-square" alt="Latest Version"></a>
@@ -36,13 +45,13 @@
 </blockquote>
 
 <h2>
-<a id="quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Start</h2>
+<a id="quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Start</h2>
 
 <h3>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
 
 <h4>
-<a id="install-through-composer" class="anchor" href="#install-through-composer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Through Composer</h4>
+<a id="install-through-composer" class="anchor" href="#install-through-composer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Through Composer</h4>
 
 <p>You can either add the package directly by firing this command</p>
 
@@ -60,46 +69,46 @@
 </code></pre>
 
 <h4>
-<a id="add-service-provider" class="anchor" href="#add-service-provider" aria-hidden="true"><span class="octicon octicon-link"></span></a>Add Service Provider</h4>
+<a id="add-service-provider" class="anchor" href="#add-service-provider" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add Service Provider</h4>
 
 <p>Add this service provider to your <code>bootstrap/app.php</code> file.</p>
 
-<div class="highlight highlight-php"><pre><span class="pl-s1"><span class="pl-smi">$app</span><span class="pl-k">-&gt;</span>register(<span class="pl-s"><span class="pl-pds">'</span>Irazasyed\Larasupport\Providers\ArtisanServiceProvider<span class="pl-pds">'</span></span>);</span></pre></div>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-smi">$app</span><span class="pl-k">-&gt;</span>register(<span class="pl-c1">Irazasyed\Larasupport\Providers\</span><span class="pl-c1">ArtisanServiceProvider</span><span class="pl-k">::</span><span class="pl-c1">class</span>);</span></pre></div>
 
 <p>Artisan Service Provider is an optional provider required only if you want <code>vendor:publish</code> command working.</p>
 
 <p>And you're done! You can now start installing any Laravel Package out there.</p>
 
 <h2>
-<a id="available-methods" class="anchor" href="#available-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Available Methods</h2>
+<a id="available-methods" class="anchor" href="#available-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Available Methods</h2>
 
 <blockquote>
 <p>These helpers can be used across your Lumen project, not only with Laravel Packages.</p>
 </blockquote>
 
 <h3>
-<a id="paths" class="anchor" href="#paths" aria-hidden="true"><span class="octicon octicon-link"></span></a>Paths</h3>
+<a id="paths" class="anchor" href="#paths" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Paths</h3>
 
 <h4>
-<a id="public_path" class="anchor" href="#public_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>public_path</h4>
+<a id="public_path" class="anchor" href="#public_path" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>public_path</h4>
 
 <p>Get the fully qualified path to the <code>public</code> directory. You can set env variable <code>PUBLIC_PATH</code> and it'll return the same instead of the default <code>public</code>.</p>
 
 <h4>
-<a id="config_path" class="anchor" href="#config_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>config_path</h4>
+<a id="config_path" class="anchor" href="#config_path" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>config_path</h4>
 
 <p>Get the fully qualified path to the <code>config</code> directory (Mostly used with Laravel Packages).</p>
 
 <h4>
-<a id="database_path" class="anchor" href="#database_path" aria-hidden="true"><span class="octicon octicon-link"></span></a>database_path</h4>
+<a id="database_path" class="anchor" href="#database_path" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>database_path</h4>
 
 <p>Get the fully qualified path to the <code>database</code> directory (Mostly used with Laravel Packages).</p>
 
 <h3>
-<a id="artisan" class="anchor" href="#artisan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Artisan</h3>
+<a id="artisan" class="anchor" href="#artisan" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Artisan</h3>
 
 <h4>
-<a id="vendorpublish" class="anchor" href="#vendorpublish" aria-hidden="true"><span class="octicon octicon-link"></span></a>vendor:publish</h4>
+<a id="vendorpublish" class="anchor" href="#vendorpublish" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>vendor:publish</h4>
 
 <p>Artisan command to Publish any publishable assets from vendor packages (Required to get Laravel Packages working!).</p>
 
@@ -112,39 +121,53 @@
 </code></pre>
 
 <h3>
-<a id="other" class="anchor" href="#other" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other</h3>
+<a id="other" class="anchor" href="#other" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other</h3>
 
 <h4>
-<a id="route_parameter" class="anchor" href="#route_parameter" aria-hidden="true"><span class="octicon octicon-link"></span></a>route_parameter</h4>
+<a id="route_parameter" class="anchor" href="#route_parameter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>route_parameter</h4>
 
-<div class="highlight highlight-php"><pre><span class="pl-s1">route_parameter(<span class="pl-smi">$name</span>, <span class="pl-smi">$default</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>)</span></pre></div>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1">route_parameter(<span class="pl-smi">$name</span>, <span class="pl-smi">$default</span> <span class="pl-k">=</span> <span class="pl-c1">null</span>)</span></pre></div>
 
 <p>Get a given parameter from the route.</p>
 
+<h4>
+<a id="elixir" class="anchor" href="#elixir" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>elixir</h4>
+
+<p>If you're using Laravel Elixir in Lumen, Then this helper function will come handy when you want to include assets from your build directory. By default, it assumes your Elixir's build directory is <code>build</code> under public directory (The default is as per the Elixir's default config). If you use a custom build directory, then you can simply set env variable <code>ELIXIR_BUILD_PATH</code> with your custom directory path and it'll use the same instead of the default.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>{{ elixir('css/all.css') }}<span class="pl-pds">"</span></span>&gt;
+
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>{{ elixir('js/app.js') }}<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
 <h2>
-<a id="contributions" class="anchor" href="#contributions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributions</h2>
+<a id="contributions" class="anchor" href="#contributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributions</h2>
 
 <p>PRs are Welcome :)</p>
 
 <h2>
-<a id="additional-information" class="anchor" href="#additional-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional information</h2>
+<a id="additional-information" class="anchor" href="#additional-information" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional information</h2>
 
 <p>Any issues, please <a href="https://github.com/irazasyed/larasupport/issues">report here</a>.</p>
 
+<p>The methods have been ported from the core of Laravel framework and modified to fit the requirements.</p>
+
 <h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p><a href="LICENSE">MIT</a> © <a href="http://lk.gd/irazasyed">Syed Irfaq R.</a></p>
+      </section>
+    </div>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/irazasyed/larasupport">Larasupport</a> is maintained by <a href="https://github.com/irazasyed">irazasyed</a>.</span>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-54567513-7");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
   </body>
 </html>
-
