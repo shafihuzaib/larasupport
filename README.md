@@ -1,10 +1,10 @@
 Larasupport Package
 ====================
 
-[![Package for Lumen](https://img.shields.io/badge/Package%20for%20-Lumen-blue.svg?style=flat-square)](https://github.com/irazasyed/larasupport)
-[![Latest Version](https://img.shields.io/github/release/irazasyed/larasupport.svg?style=flat-square)](https://github.com/irazasyed/larasupport/releases)
+[![Package for Lumen](https://img.shields.io/badge/Package%20for%20-Lumen-blue.svg?style=flat-square)](https://github.com/shafihuzaib/larasupport)
+[![Latest Version](https://img.shields.io/github/release/shafihuzaib/larasupport.svg?style=flat-square)](https://github.com/shafihuzaib/larasupport/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Total Downloads](https://img.shields.io/packagist/dt/irazasyed/larasupport.svg?style=flat-square)](https://packagist.org/packages/irazasyed/larasupport)
+[![Total Downloads](https://img.shields.io/packagist/dt/shafihuzaib/larasupport.svg?style=flat-square)](https://packagist.org/packages/shafihuzaib/larasupport)
 
 
 > Laravel Support for Lumen: Adds missing helpers that are not being made to the core of Lumen. Lets you use Laravel Packages in Lumen.
