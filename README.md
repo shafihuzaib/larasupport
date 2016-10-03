@@ -23,13 +23,13 @@ Larasupport Package
 You can either add the package directly by firing this command
 
 ```
-$ composer require irazasyed/larasupport:~1.0
+$ composer require shafihuzaib/larasupport:~1.0
 ```
 	
 Or add in the `require` key of `composer.json` file manually
 
 ```
-"irazasyed/larasupport": "~1.0"
+"shafihuzaib/larasupport": "~1.0"
 ```
 
 And Run the Composer update command
@@ -62,6 +62,9 @@ Get the fully qualified path to the `config` directory (Mostly used with Laravel
 
 #### database_path
 Get the fully qualified path to the `database` directory (Mostly used with Laravel Packages).
+
+#### app_path
+Get the fully qualified path to the `app` directory.
 
 ### Artisan
 
