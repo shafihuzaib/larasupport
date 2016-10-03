@@ -1,5 +1,5 @@
 {
-    "name": "irazasyed/larasupport",
+    "name": "shafihuzaib/larasupport",
     "description": "Adds Support to use Laravel Packages in Lumen.",
     "keywords": ["laravel", "laravel lumen support", "lumen packages", "laravel packages", "lumen support"],
     "license": "MIT",
@@ -8,6 +8,12 @@
             "name": "Syed Irfaq R.",
             "email": "syed+gh@lukonet.com",
             "homepage": "https://lukonet.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Huzaib Shafi",
+            "email": "mail@shafihuzaib.com",
+            "homepage": "https://www.shafihuzaib.com",
             "role": "Developer"
         }
     ],
@@ -19,7 +25,7 @@
         "src/helpers.php"
       ],
       "psr-4": {
-          "Irazasyed\\Larasupport\\": "src/"
+          "Shafihuzaib\\Larasupport\\": "src/"
       }
     },
     "extra": {
