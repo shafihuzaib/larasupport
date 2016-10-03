@@ -5,17 +5,18 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Syed Irfaq R.",
-            "email": "syed+gh@lukonet.com",
-            "homepage": "https://lukonet.com",
-            "role": "Developer"
-        },
-        {
             "name": "Huzaib Shafi",
             "email": "mail@shafihuzaib.com",
             "homepage": "https://www.shafihuzaib.com",
             "role": "Developer"
+        },
+        {
+            "name": "Syed Irfaq R.",
+            "email": "syed+gh@lukonet.com",
+            "homepage": "https://lukonet.com",
+            "role": "Developer"
         }
+        
     ],
     "require": {
         "league/flysystem": "~1.0"
