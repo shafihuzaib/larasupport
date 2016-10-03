@@ -90,3 +90,16 @@ if (!function_exists('elixir')) {
         throw new InvalidArgumentException("File {$file} not defined in asset manifest.");
     }
 }
+
+if (! function_exists('app_path')) {
+    /**
+     * Get the path to the application folder.
+     *
+     * @param  string  $path
+     * @return string
+     */
+    function app_path($path = '')
+    {
+        return app('path').($path ? DIRECTORY_SEPARATOR.$path : $path);
+    }
+}
